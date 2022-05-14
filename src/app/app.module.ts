@@ -9,6 +9,8 @@ import { TeachersComponent } from './components/teachers/teachers.component';
 import { StudentsComponent } from './components/students/students.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AgregarSComponent } from './components/agregar-s/agregar-s.component';
+import { AgregarTComponent } from './components/agregar-t/agregar-t.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HomeComponent,
     TeachersComponent,
     StudentsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AgregarSComponent,
+    AgregarTComponent
   ],
   imports: [
     BrowserModule,

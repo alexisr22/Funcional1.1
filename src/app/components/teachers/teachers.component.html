@@ -1,0 +1,53 @@
+<br>
+<br>
+<div >
+    <button class="cta">
+        <span>Agregar</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+
+</div>
+<br>
+<br>
+<br>
+    <table className='table table-striped'>
+        <thead className='bg-primary text-white'>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Acciones</th>
+
+            </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor="let teacher of teachers">
+                    <td> {{teacher.name}}  </td>
+                    <td> {{teacher.last_name}} </td>
+                    <td> {{teacher.age}} </td>
+                    <td> {{teacher.number_phone}} </td>
+                    <td> {{teacher.email}} </td>
+    
+                    <td>
+                    <button className="Delete">
+                        <span class="shadow"></span>
+                        <span class="edgeE"></span>
+                        <span class="frontE text"> Editar
+                        </span>
+                      </button> 
+                   <button className="Delete">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> Eliminar
+                    </span>
+                  </button>                           
+
+                </td> 
+              </tr>                    
+            </tbody>
+    </table>

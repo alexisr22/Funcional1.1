@@ -7,6 +7,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 export class TeacherService {
 
   _url = 'http://localhost:8000/api/teachers'
+  url = 'http://localhost:8000/api/teacher'
+
 
   constructor(
     private http: HttpClient
@@ -21,4 +23,8 @@ export class TeacherService {
        headers : header
      });
    }
+
+   saveTeacher(data:any){
+    return this.http.post(this.url,data)
+  }
 }

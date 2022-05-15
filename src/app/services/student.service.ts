@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { Observable } from 'rxjs';
+import { StudentsComponent } from '../components/students/students.component';
 
 
 @Injectable({
@@ -8,6 +10,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 export class StudentService {
 
   _url = 'http://localhost:8000/api/students'
+  url = 'http://localhost:8000/api/student'
 
   constructor(
     private http: HttpClient
@@ -22,4 +25,9 @@ export class StudentService {
        headers : header
      });
    }
+
+   saveStudent(data:any){
+     return this.http.post(this.url,data)
+   }
+
 }

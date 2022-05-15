@@ -2,8 +2,9 @@
 <br>
 <br>
 <br>
+<form #teacherform="ngForm" (ngSubmit)="getTeacherFormData(teacherform.value)">
 <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="name">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Nombre</label>
@@ -11,7 +12,7 @@
 <br>
 <br>
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="last_name">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Apellido</label>
@@ -19,7 +20,7 @@
 <br>
 <br>
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="age">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Edad</label>
@@ -27,7 +28,7 @@
 <br>
 <br>
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="number_phone">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Telefono</label>
@@ -35,7 +36,7 @@
 <br>
 <br>
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="email">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Correo</label>
@@ -53,3 +54,4 @@
     </div>
     <span> Enviar </span>
   </button>
+</form>

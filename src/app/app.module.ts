@@ -11,6 +11,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AgregarSComponent } from './components/agregar-s/agregar-s.component';
 import { AgregarTComponent } from './components/agregar-t/agregar-t.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AgregarTComponent } from './components/agregar-t/agregar-t.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

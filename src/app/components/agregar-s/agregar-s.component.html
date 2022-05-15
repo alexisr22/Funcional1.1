@@ -2,8 +2,9 @@
 <br>
 <br>
 <br>
+<form #studentform="ngForm" (ngSubmit)="getStudentFormData(studentform.value)">
 <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="name_class">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Nombre de la clase</label>
@@ -13,7 +14,7 @@
 
 
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="classroom">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Salon de clases</label>
@@ -22,14 +23,14 @@
 <br>
 
   <div class="group">
-    <input required="" type="text" class="input">
+    <input required="" type="text" class="input" ngModel name="teacher">
     <span class="highlight"></span>
     <span class="bar"></span>
     <label>Profesor</label>
   </div>
   <br>
 <br>
-  <button>
+  <button type="submit">
     <div class="svg-wrapper-1">
       <div class="svg-wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -40,3 +41,4 @@
     </div>
     <span> Enviar </span>
   </button>
+</form>

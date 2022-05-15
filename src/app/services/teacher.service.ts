@@ -27,4 +27,8 @@ export class TeacherService {
    saveTeacher(data:any){
     return this.http.post(this.url,data)
   }
+
+  deleteTeacher(id:any){
+    return this.http.delete(`${this.url}/${id}`)
+  }
 }

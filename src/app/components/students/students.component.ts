@@ -21,6 +21,12 @@ export class StudentsComponent implements OnInit {
 
    }
 
+   deleteStudent(student:any){
+     this.studentService.deleteStudent(student).subscribe((result) =>{
+       console.warn("result", result)
+     })
+   }
+
   ngOnInit(): void {
   }
 
